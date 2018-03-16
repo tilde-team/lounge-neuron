@@ -1,25 +1,24 @@
 {
-  "name": "thelounge-theme-neuron-fork", 
-  "version": "1.0.0",
+  "name": "thelounge-theme-neuron-fork",
+  "version": "1.0.1",
   "description": "A dark theme for The Lounge",
   "main": "package.json",
   "thelounge": {
-    "css": "neuron.css", 
-    "name": "Neuron", 
+    "css": "neuron.css",
+    "name": "Neuron",
     "type": "theme"
   },
   "license": "MIT",
   "homepage": "https://github.com/tilde-team/lounge-neuron",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tilde-team/lounge-neuron.git" 
+    "url": "git+https://github.com/tilde-team/lounge-neuron.git"
   },
   "keywords": [
     "thelounge",
     "thelounge-theme"
   ],
   "bugs": {
-    "url": "https://github.com/tilde-team/lounge-neuron/issues" 
+    "url": "https://github.com/tilde-team/lounge-neuron/issues"
   }
 }
-
