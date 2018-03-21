@@ -5,7 +5,10 @@
  * jon snow kills sansa
  */
 
+/*
+don't bother importing external fonts
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900,700,600,500,300,200);
+*/
 
 /* neuron base16 colors
  * BASE 00: #1C1919
@@ -48,7 +51,7 @@
 
 body {
   background-color: #282525;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Consolas", monospace;
   color: #C5C1C1;
 }
 
@@ -85,7 +88,7 @@ body {
   border-radius: 0;
   border: none;
   background-color: #282525;
-  font-family: "Source Code Pro";
+  font-family: "Consolas";
 }
 
 #form #input::placeholder {
@@ -124,7 +127,7 @@ body {
 }
 
 #chat, #windows .header {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Consolas', monospace;
   font-weight: 600;
   padding-left: 12px;
   padding-right: 30px;
@@ -153,7 +156,7 @@ body {
 
 #chat .unread-marker .unread-marker-text::before {
   text-transform: uppercase;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Consolas', monospace;
   color: #EF4657;
   background-color: #282525;
 }
@@ -177,7 +180,7 @@ body {
   line-height: 48px;
   padding-right: 0;
   font-size: 12px;
-  font-family: "Source Code Pro";
+  font-family: "Consolas";
 }
 
 #form #nick.editable {
@@ -237,7 +240,7 @@ body {
 }
 
 #windows .header .topic, .messages .msg {
-  font-family: "Source Code Pro";
+  font-family: "Consolas";
 }
 
 #windows .header {
