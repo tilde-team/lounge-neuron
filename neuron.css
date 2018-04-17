@@ -5,11 +5,6 @@
  * jon snow kills sansa
  */
 
-/*
-don't bother importing external fonts
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900,700,600,500,300,200);
-*/
-
 /* neuron base16 colors
  * BASE 00: #1C1919
  * BASE 01: #282525
@@ -48,10 +43,15 @@ don't bother importing external fonts
  * 16, light grey: #8E8484
  */
 
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+* {
+  font-family: 'IBM Plex Mono', monospace;
+}
 
+#chat .userlist,
+#windows .window,
 body {
   background-color: #282525;
-  font-family: "Consolas", monospace;
   color: #C5C1C1;
 }
 
@@ -88,7 +88,6 @@ body {
   border-radius: 0;
   border: none;
   background-color: #282525;
-  font-family: "Consolas";
 }
 
 #form #input::placeholder {
@@ -127,7 +126,6 @@ body {
 }
 
 #chat, #windows .header {
-  font-family: 'Consolas', monospace;
   font-weight: 600;
   padding-left: 12px;
   padding-right: 30px;
@@ -156,7 +154,6 @@ body {
 
 #chat .unread-marker .unread-marker-text::before {
   text-transform: uppercase;
-  font-family: 'Consolas', monospace;
   color: #EF4657;
   background-color: #282525;
 }
@@ -180,7 +177,6 @@ body {
   line-height: 48px;
   padding-right: 0;
   font-size: 12px;
-  font-family: "Consolas";
 }
 
 #form #nick.editable {
@@ -239,10 +235,6 @@ body {
   color: #91A6FF;
 }
 
-#windows .header .topic, .messages .msg {
-  font-family: "Consolas";
-}
-
 #windows .header {
   border: none;
 }
@@ -270,34 +262,25 @@ body {
   font-size: 1.1em;
 }
 
-#sidebar .chan:first-child::after {
-  content: ' ';
-  display: block;
-  height: 2px;
-  background-color: #EF4657;
-  width: 25px;
-  margin-top: 8px;
-}
-
-#sidebar .chan:first-child:hover::after, #sidebar .chan:first-child.active::after {
-  background-color: #FF93A4;
-}
-
-#sidebar .chan:first-child:hover, #sidebar .chan:first-child.active {
-  color: #FF93A4;
-}
-
-#sidebar .chan.lobby:before, #chat .lobby .title:before {
-  content: none;
-}
-
-#sidebar .chan .name:after {
-  background: none;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
+
+#context-menu,
+.textcomplete-menu {
+  border: 0;
+  background-color: #282525;
+}
+
+.context-menu-item,
+.textcomplete-item {
+  transition: none;
+}
+
+.context-menu-divider {
+  background-color: #aaa;
+}
+
 
 #chat.colored-nicks .user.color-1, #chat.colored-nicks .user.color-17 {
   color: #EF4657;
